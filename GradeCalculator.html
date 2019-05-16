@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+      <title> Grade Calculator </title>   
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src= "script1.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1> Grade Calculator </h1>
+    </header>
+    <section>
+        <form id= "gradebook">
+            <p class="gradebook">This page is for you to enter your exam grades.<br> Your lowest grade will be dropped and the average of the exams will be taken.<br> Your exam score should be in the range of 0 to 100.<br> If your exam average is lower than 65, retake this class >:( </p>
+        </form>
+        <p>Press Replace button to change "exam" to "test"</p>
+		
+        <button onclick="ReplaceButton()">Replace</button>
+    </section>
+    <aside>
+      <p>Enter your grades:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Letter Grade</th>
+            <th>Number Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>90+</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>80-89</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>70-79</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>60-69</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>59 and below</td>
+          </tr>
+          </tbody>
+          <form id="grades">
+      Exam One:<br>
+      <input type="number" id= "One"><br>
+      Exam Two:<br>
+      <input type="number" id= "Two"><br>
+      Exam Three:<br>
+      <input type="nunber" id= "Three"><br>
+      Exam Four:<br>
+      <input type="number" id= "Four">
+    </form>
+    <p></p>
+    <button onclick="myFunction()">Find Average</button>
+    <p><u><b>Your Average</u></b></p>
+    <p>Numeric Grade:</p><p id="getAverage"></p>
+    <p>Letter Grade:</p> <p id="LetterGrade"></p>
+    </section>
+  </body>
+
+</html>

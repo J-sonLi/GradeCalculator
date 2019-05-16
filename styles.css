@@ -1,0 +1,20 @@
+header {
+height:100px;
+border-style:solid;
+text-align:center;
+margin-bottom:20px;
+}
+section {
+border-style:solid;
+width:49%;
+float:left;
+height:600px;
+}
+aside {
+border-style:solid;
+width:50%;
+float:right;
+height:500px;
+
+}
+
