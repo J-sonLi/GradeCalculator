@@ -11,15 +11,14 @@
     </header>
     <section>
         <form id= "gradebook">
-            <p class="gradebook">This page is for you to enter your exam grades.<br> Your lowest grade will be dropped and the average of the exams will be taken.<br> Your exam score should be in the range of 0 to 100.<br> If your exam average is lower than 65, retake this class >:( </p>
+            <p class="gradebook">This page is for you to enter your exam grades.<br> Your lowest grade will be dropped and the average of the exams will be taken.<br> If your exam average is 69 or lower, retake this class >:( </p>
         </form>
-        <p>Press Replace button to change "exam" to "test"</p>
+        <p>Press the Replace button to change "exam" to "test"</p>
 		
         <button onclick="ReplaceButton()">Replace</button>
-    </section>
-    <aside>
-      <p>Enter your grades:</p>
-      <table>
+		<br>
+		<br>
+		<table align="center" border="1">
         <thead>
           <tr>
             <th>Letter Grade</th>
@@ -45,10 +44,16 @@
           </tr>
           <tr>
             <td>F</td>
-            <td>59 and below</td>
+            <td>why :(</td>
           </tr>
           </tbody>
-          <form id="grades">
+		</table>
+		
+    </section>
+    <aside>
+      <p><b>Enter your grades:</b></p>
+     
+      <form id="grades">
       Exam One:<br>
       <input type="number" id= "One"><br>
       Exam Two:<br>
@@ -58,12 +63,13 @@
       Exam Four:<br>
       <input type="number" id= "Four">
     </form>
-    <p></p>
+    <p> </p>
     <button onclick="myFunction()">Find Average</button>
     <p><u><b>Your Average</u></b></p>
-    <p>Numeric Grade:</p><p id="getAverage"></p>
-    <p>Letter Grade:</p> <p id="LetterGrade"></p>
+    <p>Numeric Grade:</p>
+	<p id="getAverage"></p>
+    <p>Letter Grade:</p> 
+	<p id="LetterGrade"></p>
     </section>
   </body>
-
 </html>
